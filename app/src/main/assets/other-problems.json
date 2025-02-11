@@ -1,0 +1,149 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "nb-NO",
+  "id": "61b9e1da-5093-4bdb-8e04-089fefe8f15d",
+  "status": "draft",
+  "publisher": "NHN",
+  "meta": {
+    "profile": [
+      "http://ehelse.no/fhir/StructureDefinition/sdf-Questionnaire"
+    ],
+    "tag": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "nb-NO",
+        "display": "Bokmål"
+      }
+    ],
+    "security": [
+      {
+        "code": "3",
+        "display": "Helsehjelp (Full)",
+        "system": "urn:oid:2.16.578.1.12.4.1.1.7618"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "name": "http://www.nhn.no"
+    }
+  ],
+  "subjectType": [
+    "Patient"
+  ],
+  "extension": [
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sidebar",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-sidebar",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-information-message",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-information-message",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefintion/sdf-itemControl-visibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-help",
+            "display": "Hide help texts"
+          },
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-sublabel",
+            "display": "Hide sublabel texts"
+          }
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "fbbb030e-f52f-4e8d-8347-f5be6b7f0863",
+      "type": "choice",
+      "text": "Does your baby have trouble sleeping?",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "2ae58e48-6c9e-4c0f-8ce4-bb750d841cd9",
+            "code": "yes",
+            "system": "urn:uuid:af729822-5895-4e55-8663-d2171d990255",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "95c0c66d-6c02-4e8a-834f-1a5470093aee",
+            "code": "no",
+            "system": "urn:uuid:af729822-5895-4e55-8663-d2171d990255",
+            "display": "No"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "f0b53fbd-4226-43a7-8331-aa1002912485",
+      "type": "choice",
+      "text": "Irritabilty",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "2f219c87-e2bc-4915-fef9-373d548591b6",
+            "code": "yes",
+            "system": "urn:uuid:76237254-a033-44b1-e706-c9034e70864e",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "659653ac-2c8f-497c-8fd8-18fba7498421",
+            "code": "no",
+            "system": "urn:uuid:76237254-a033-44b1-e706-c9034e70864e",
+            "display": "No"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "1e7e68af-bbc5-4591-eeaf-23ca447c9992",
+      "type": "string",
+      "text": "Others (Specify) :",
+      "required": false
+    }
+  ]
+}

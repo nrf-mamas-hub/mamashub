@@ -2,9 +2,8 @@
     <string name="app_name">KabarakMHIS</string>
 
     <!--    Development Servers-->
-    <string name="base_url">http://10.1.59.69:8080/fhir/</string>
-    <string name="fhir_url">http://10.1.59.69:8080/fhir/</string>
-
+    <string name="base_url">http://192.168.253.236:8080/fhir/</string>
+    <string name="fhir_url">http://41.89.93.172/fhir/</string>
 
 
     <!--    Live Servers-->

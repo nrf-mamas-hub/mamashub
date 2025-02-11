@@ -28,7 +28,9 @@ import com.kabarak.kabarakmhis.new_designs.previous_pregnancy.PreviousPregnancyL
 import com.kabarak.kabarakmhis.new_designs.tetanus_diptheria.PreventiveServiceList
 import com.kabarak.kabarakmhis.new_designs.weight_monitoring.WeightMonitoringChart
 import com.kabarak.kabarakmhis.pnc.ChildBirthView
-import com.kabarak.kabarakmhis.pnc.ChildViewActivity
+import com.kabarak.kabarakmhis.pnc.broad_clinical.BroadViewActivity
+import com.kabarak.kabarakmhis.pnc.cancer_screening.CancerScreeningViewActivity
+import com.kabarak.kabarakmhis.pnc.other_problems.OtherProblemsViewActivity
 
 
 class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternalProfileChild>,
@@ -81,13 +83,13 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
 
                 // Replace ReferralView with your classView
                 // ChildBirth
-                8.1 -> { context.startActivity(Intent(context, ChildViewActivity::class.java))}
+                8.1 -> { context.startActivity(Intent(context, ChildBirthView::class.java))}
                 // Early Identification of Congenital Abnormalities
                 8.2 -> { context.startActivity(Intent(context, ReferralView::class.java))} //
                 // Reproductive Organs Cancer Screening
                 8.3 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Family Planning
-                8.4 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.4 -> { context.startActivity(Intent(context, CancerScreeningViewActivity::class.java))}
                 // Postnatal Care - Mother
                 8.5 -> { context.startActivity(Intent(context, ReferralView::class.java))}
                 // Postnatal Care - Baby
@@ -100,13 +102,13 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 8.8 -> { context.startActivity(Intent(context, ReferralView::class.java))}
 
                 // Other Problems as Reported by Parent or Guardian
-                8.9 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.9 -> { context.startActivity(Intent(context, OtherProblemsViewActivity::class.java))}
 
                 // Record of Baby Teeth Development
                 9.1 -> { context.startActivity(Intent(context, PMTCTInterventionsView::class.java))}
 
                 // Broad Clinical Review at First Contact Below 6 Months
-                9.2 -> { context.startActivity(Intent(context, PMTCTInterventionsView::class.java))}
+                9.2 -> { context.startActivity(Intent(context, BroadViewActivity::class.java))}
 
                 // Feeding Information from Parent/Guardian
                 9.3 -> { context.startActivity(Intent(context, PMTCTInterventionsView::class.java))}

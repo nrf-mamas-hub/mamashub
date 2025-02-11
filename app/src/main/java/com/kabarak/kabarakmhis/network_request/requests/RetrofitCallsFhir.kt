@@ -615,7 +615,7 @@ class RetrofitCallsFhir {
 
     }
 
-    private val apiService = RetrofitBuilder.getRetrofit("http://10.1.59.69:8080/fhir/").create(Interface::class.java)
+    private val apiService = RetrofitBuilder.getRetrofit("http://192.168.253.236/fhir/").create(Interface::class.java)
 
     fun submitQuestionnaireResponse(questionnaireResponseString: String, callback: Callback<ResponseBody>) {
         val mediaType = "application/fhir+json".toMediaTypeOrNull()

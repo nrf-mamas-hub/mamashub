@@ -1,1 +1,1263 @@
-{"resourceType":"Questionnaire","language":"nb-NO","status":"draft","publisher":"NHN","meta":{"profile":["http://ehelse.no/fhir/StructureDefinition/sdf-Questionnaire"],"tag":[{"system":"urn:ietf:bcp:47","code":"nb-NO","display":"Bokmål"}],"security":[{"code":"3","display":"Helsehjelp (Full)","system":"urn:oid:2.16.578.1.12.4.1.1.7618"}]},"contact":[{"name":"http://www.nhn.no"}],"subjectType":["Patient"],"extension":[{"url":"http://helsenorge.no/fhir/StructureDefinition/sdf-sidebar","valueCoding":{"system":"http://helsenorge.no/fhir/ValueSet/sdf-sidebar","code":"1"}},{"url":"http://helsenorge.no/fhir/StructureDefinition/sdf-information-message","valueCoding":{"system":"http://helsenorge.no/fhir/ValueSet/sdf-information-message","code":"1"}},{"url":"http://helsenorge.no/fhir/StructureDefintion/sdf-itemControl-visibility","valueCodeableConcept":{"coding":[{"system":"http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions","code":"hide-help","display":"Hide help texts"},{"system":"http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions","code":"hide-sublabel","display":"Hide sublabel texts"}]}}],"id":"2372da89-7c56-4d64-c191-e7c337dcab83","item":[{"linkId":"54f8fcef-99fe-4ec0-c30f-c0f85b84f4f6","type":"group","item":[{"linkId":"1f8c6dba-66ba-4888-e315-410c08d314d3","type":"choice","item":[{"linkId":"f126e5a0-7e86-459b-c125-7a82fa183a7b","type":"choice","item":[{"linkId":"d1d36136-ca9d-4df9-81e6-dee2cfb16b0c","type":"string","required":false,"text":" Others Specify"}],"required":false,"answerOption":[{"valueCoding":{"id":"74dd41d2-84dd-4cd2-ba08-3e812336e74a","code":"extra-small-(micro-cephalic","system":"urn:uuid:d1b7581d-d15e-4340-c1ca-6eb95104935e","display":"Extra small (micro cephalic"}},{"valueCoding":{"id":"eb71bb53-fe0d-49d9-887a-dcb110a73ae7","code":"--extra-big-(hydrocephalic","system":"urn:uuid:d1b7581d-d15e-4340-c1ca-6eb95104935e","display":"\t Extra big (hydrocephalic"}}],"enableWhen":[{"question":"1f8c6dba-66ba-4888-e315-410c08d314d3","operator":"=","answerCoding":{"system":"urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f","code":"abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"fa6b200d-912c-4234-9989-7111968fd0d1","code":"normal","system":"urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f","display":"Normal"}},{"valueCoding":{"id":"2bec20ae-70d3-4e1b-83c3-ab120888cfdf","code":"abnormal","system":"urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f","display":"Abnormal"}}],"text":"Head size:","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"8399ed82-b48a-47b6-d32e-969224cc0c5a","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Head size:"},{"linkId":"b9a90470-7e9f-43b0-865d-1e8aba48d70a","type":"group","item":[{"linkId":"d2dae682-5a21-4bee-88fa-12ce84f1759a","type":"choice","item":[{"linkId":"5456b5d1-0632-4c98-82e1-92a376672e38","type":"choice","item":[{"linkId":"97150877-5ff9-432f-8a29-7acd3698e165","type":"string","required":false,"text":"Others Specify"}],"required":false,"answerOption":[{"valueCoding":{"id":"278390df-cf5e-48f9-84b5-c696df4f9301","code":"cleft-lip","system":"urn:uuid:e25d1d99-e004-4680-82b7-c66d13983331","display":"Cleft lip"}},{"valueCoding":{"id":"b9ced9f6-e9ec-41f3-a292-8878348b9f58","code":"palate","system":"urn:uuid:e25d1d99-e004-4680-82b7-c66d13983331","display":"Palate"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"check-box"}]}}],"enableWhen":[{"question":"d2dae682-5a21-4bee-88fa-12ce84f1759a","operator":"=","answerCoding":{"system":"urn:uuid:ed78343b-e14e-4025-812d-117e5732d555","code":"abnormal-"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ac40976e-4e31-4940-e1fc-7e85ff0fe781","code":"normal","system":"urn:uuid:ed78343b-e14e-4025-812d-117e5732d555","display":"Normal"}},{"valueCoding":{"id":"bba8adf0-0254-420d-82fc-7e52217f3c8a","code":"abnormal-","system":"urn:uuid:ed78343b-e14e-4025-812d-117e5732d555","display":"Abnormal "}}],"text":"Mouth and\nGums","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"c5c370c3-a4fe-4537-8420-b58c73cf9f0f","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Mouth and\nGums"},{"linkId":"14f500dd-8958-4102-8fbf-675a7e571d49","type":"group","item":[{"linkId":"c98dc5ea-4a9a-4aba-8ae8-27e6f8cc3700","type":"choice","item":[{"linkId":"eb8c0517-9bc3-427d-9ae3-588e7ad77d1e","type":"string","required":false,"text":"Specify","enableWhen":[{"question":"c98dc5ea-4a9a-4aba-8ae8-27e6f8cc3700","operator":"=","answerCoding":{"system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"addc10f0-1218-492f-8a29-6d09b2a6c6a1","code":"normal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Normal"}},{"valueCoding":{"id":"2b18c168-6f27-455e-88c9-017b86c4bcb6","code":"abnormal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"6ba60598-b2a2-4548-83a9-a134f8f77a49","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Ears"},{"linkId":"706d0f1b-8b36-4055-969e-acaea257af1f","type":"group","item":[{"linkId":"fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4","type":"choice","item":[{"linkId":"0c90fda9-76c6-4cc9-88c0-d41fd73f5a2c","type":"choice","required":false,"answerOption":[{"valueCoding":{"id":"3b9a644e-ccba-4fae-8bc9-5086b7940c71","code":"normal-arms-","system":"urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6","display":"Normal Arms "}},{"valueCoding":{"id":"a425f9ba-03c2-43a7-81e1-9d3222864422","code":"normal-legs","system":"urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6","display":"Normal Legs"}},{"valueCoding":{"id":"e07b50c4-dc8f-47c5-8aee-64db4758c3e8","code":"normal-back","system":"urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6","display":"Normal Back"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"check-box"}]}}],"enableWhen":[{"question":"fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4","operator":"=","answerCoding":{"system":"urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990","code":"normal"}}]},{"linkId":"a241eb17-8a16-490e-82ac-48cf55102f24","type":"choice","item":[{"linkId":"344d4162-3f63-49ae-8fdc-281c35798670","type":"string","text":"\t Others Specify:","required":false}],"required":false,"answerOption":[{"valueCoding":{"id":"2fa909dc-799e-450f-cf0a-97b637c17893","code":"club-foot:","system":"urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d","display":"Club foot:"}},{"valueCoding":{"id":"ae875e16-1bb6-465b-8b32-1dadccef674b","code":"congenital-hip-dislocation:","system":"urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d","display":"Congenital hip dislocation:"}},{"valueCoding":{"id":"48b85623-70e0-4a98-811e-7c9424b8501d","code":"jointed-fingers-or-toes:","system":"urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d","display":"Jointed fingers or toes:"}},{"valueCoding":{"id":"9a2b9c51-0e18-403d-8cfd-08e20c4ac559","code":"extra-fingers-and-toes:-","system":"urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d","display":"Extra fingers and toes: "}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"check-box"}]}}],"enableWhen":[{"question":"fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4","operator":"=","answerCoding":{"system":"urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"058af85d-cd32-4220-8178-64b772d161b1","code":"normal","system":"urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990","display":"Normal"}},{"valueCoding":{"id":"9e9240ad-8b38-4594-d06b-4a6dd0e33a9f","code":"abnormal","system":"urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"5573951e-6b8b-42ae-8e99-bcb7af1768d7","type":"group","item":[{"linkId":"d180644d-e0c6-4816-f061-684c6738b68c","type":"choice","item":[{"linkId":"e2de904f-712d-4ee3-8092-8b9eeeaed285","type":"choice","item":[{"linkId":"20619df2-6c8c-47c6-8e33-559cfb0803c8","type":"string","required":false,"text":"Other specify: "}],"required":false,"answerOption":[{"valueCoding":{"id":"9768a472-20bf-4a4d-c5ae-7a7214e6b54d","code":"floppiness","system":"urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462","display":"Floppiness"}},{"valueCoding":{"id":"bab3584d-6302-46ae-9556-4ce80b56c0c0","code":"rigidity","system":"urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462","display":"Rigidity"}},{"valueCoding":{"id":"769a002c-de38-43b3-9055-5e20ecab2072","system":"urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462"}}],"enableWhen":[{"question":"d180644d-e0c6-4816-f061-684c6738b68c","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"normal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Normal"}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"text":"Muscle Tone"},{"linkId":"a9c64ac3-2c95-4272-d12b-cd99f89ba25e","type":"group","item":[{"linkId":"006cc30e-2fbe-47cb-b05c-486ca2ceb169","type":"choice","item":[{"linkId":"e619b5a8-ef2d-4de7-8f86-582a8370236b","type":"boolean","item":[{"linkId":"e314e9ce-38aa-4065-8a1a-0593571bcbe3","type":"string","required":false,"text":"Other specify:","enableWhen":[{"question":"006cc30e-2fbe-47cb-b05c-486ca2ceb169","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}]}],"required":false,"text":"Not Flexible","enableWhen":[{"question":"006cc30e-2fbe-47cb-b05c-486ca2ceb169","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"flexible","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Flexible"}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"text":"Joints movement"},{"linkId":"709b522d-18a3-4e9a-9c9c-55ff6f6f5ee0","type":"group","item":[{"linkId":"583593b9-7dbb-43d8-890a-4eab3e06f33b","type":"choice","item":[{"linkId":"375b55ee-6159-4790-8279-4993753a0879","type":"string","text":"Specify","required":false,"enableWhen":[{"question":"583593b9-7dbb-43d8-890a-4eab3e06f33b","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"normal-5-fingers-and-5-toe","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Normal 5 fingers and 5 toe"}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"text":"Fingers & Toes"},{"linkId":"82907958-633a-4952-c4cb-d7865880c8de","type":"group","item":[{"linkId":"845597be-dfdd-4550-b997-636a723f69a4","type":"choice","item":[{"linkId":"51fbad99-0834-4f4e-a47f-630178a8b099","type":"string","text":"Specify","required":false,"enableWhen":[{"question":"845597be-dfdd-4550-b997-636a723f69a4","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"normal-","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Normal "}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]}],"required":false,"text":"Arms &\nShoulders"},{"linkId":"6c1ea238-296e-4759-83dc-1c6fb2aa8fa2","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Arms and legs"},{"linkId":"0360a6ab-d29c-46a4-95ae-4cc2e6c3e420","type":"group","item":[{"linkId":"f4af620f-17fb-43d2-f62b-2249d08ae74b","type":"choice","item":[{"linkId":"bc982a32-a23b-43ab-9636-9ed9bf2e0a76","type":"choice","required":false,"answerOption":[{"valueCoding":{"id":"2427f4d4-6b08-47f0-80cc-05edf8fa85a6","code":"any-swellings","system":"urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8","display":"Any Swellings"}},{"valueCoding":{"id":"e7f01220-6eaf-4a3d-8738-40039005c145","code":"protrusions","system":"urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8","display":"Protrusions"}},{"valueCoding":{"id":"18680caf-a00c-4a26-9521-89150cb3d6d6","code":"sores-or-marks-along-the-spine","system":"urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8","display":"Sores or Marks along the spine"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"check-box"}]}}],"enableWhen":[{"question":"f4af620f-17fb-43d2-f62b-2249d08ae74b","operator":"=","answerCoding":{"system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","code":"abnormal"}}]},{"linkId":"5ad03834-2b66-4ccf-ef7e-f0c2e87585cc","type":"string","required":false,"text":"Specify","enableWhen":[{"question":"f4af620f-17fb-43d2-f62b-2249d08ae74b","operator":"=","answerCoding":{"system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"addc10f0-1218-492f-8a29-6d09b2a6c6a1","code":"normal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Normal"}},{"valueCoding":{"id":"2b18c168-6f27-455e-88c9-017b86c4bcb6","code":"abnormal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"8447abbf-d7c4-4bdd-8866-16d89899f2a8","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Spine/neck/\nback"},{"linkId":"50963523-9bc0-439a-fb9a-1779f26e3daa","type":"group","item":[{"linkId":"e94703b3-57d6-446c-8aef-e709628c1cc8","type":"choice","item":[{"linkId":"6d8d9ddf-ca25-4629-de57-09a930352dae","type":"choice","required":false,"answerOption":[{"valueCoding":{"id":"2427f4d4-6b08-47f0-80cc-05edf8fa85a6","code":"baby-becomes-floppy-when-lying-in-certain-position","system":"urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8","display":"Baby becomes floppy when lying in certain position"}},{"valueCoding":{"id":"e7f01220-6eaf-4a3d-8738-40039005c145","code":"--celebral-palsy?-","system":"urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8","display":"\t Celebral palsy? "}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"check-box"}]}}],"enableWhen":[{"question":"e94703b3-57d6-446c-8aef-e709628c1cc8","operator":"=","answerCoding":{"system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","code":"abnormal"}}]},{"linkId":"a064c365-712c-4a39-b8eb-747760422560","type":"string","required":false,"text":"If yes Specify","enableWhen":[{"question":"e94703b3-57d6-446c-8aef-e709628c1cc8","operator":"exists","answerBoolean":true}]}],"required":false,"answerOption":[{"valueCoding":{"id":"addc10f0-1218-492f-8a29-6d09b2a6c6a1","code":"normal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Normal"}},{"valueCoding":{"id":"2b18c168-6f27-455e-88c9-017b86c4bcb6","code":"abnormal","system":"urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"c78961df-b2fa-435f-87b4-4024035b61bf","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Body Movement"},{"linkId":"109892e4-3d7a-4f7b-d7c1-5d4473f779fc","type":"group","item":[{"linkId":"f1f83f64-54e7-454d-88a3-68f4c5d9278c","type":"choice","item":[{"linkId":"7b32c23b-c2e4-427a-a295-cd8136bb428b","type":"string","required":false,"text":"Specify","enableWhen":[{"question":"f1f83f64-54e7-454d-88a3-68f4c5d9278c","operator":"=","answerCoding":{"system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","code":"abnormal"}}]}],"required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"normal-","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Normal "}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"a40ddbf0-0eda-4ded-84d5-98676fffd3cf","type":"string","required":false,"text":"Remarks"}],"required":false,"text":"Abdominal wall "},{"linkId":"3bb99c47-42e3-4d81-fd3f-04c5c7a8e248","type":"group","item":[{"linkId":"cde92f6e-84ba-408d-82cd-271c6f73c51f","type":"choice","required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"normal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Normal"}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"abnormal","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Abnormal"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"138068a7-db0b-480c-8040-05316871fbd0","type":"string","text":"Remarks","required":false}],"required":false,"text":"Genitalia"},{"linkId":"ae58c67e-6fdd-4dfa-8ab8-b8f4adb1b5d4","type":"group","item":[{"linkId":"34ec3ae2-17f6-4ab9-9690-1afd15fc9b87","type":"choice","required":false,"answerOption":[{"valueCoding":{"id":"ad2178b9-6b63-459b-fd0b-ef000c3061de","code":"perforate-(normal)","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Perforate (Normal)"}},{"valueCoding":{"id":"1c2737cf-b47c-4796-d52a-131ac97f549f","code":"imperforate-(abnormal)","system":"urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375","display":"Imperforate (Abnormal)"}}],"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"radio-button"}]}}]},{"linkId":"f92a95ee-b015-4850-8f0c-7ca500580d60","type":"string","text":"Remarks","required":false}],"required":false,"text":"Anus"},{"linkId":"73a00b14-2181-4d7b-8f83-586c2f8fd0f2","type":"string","required":false,"text":"List any abnormal findings (not captured previously):"},{"linkId":"e5004328-27a1-4109-f273-524c97d3c295","type":"display","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/ValueSet/questionnaire-item-control","code":"highlight"}]}}],"required":false,"text":"NB: Assessment to be done within 48 hours after childbirth. To be repeated at 6 weeks"}]}
+{
+  "resourceType": "Questionnaire",
+  "language": "nb-NO",
+  "status": "draft",
+  "publisher": "NHN",
+  "meta": {
+    "profile": [
+      "http://ehelse.no/fhir/StructureDefinition/sdf-Questionnaire"
+    ],
+    "tag": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "nb-NO",
+        "display": "Bokmål"
+      }
+    ],
+    "security": [
+      {
+        "code": "3",
+        "display": "Helsehjelp (Full)",
+        "system": "urn:oid:2.16.578.1.12.4.1.1.7618"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "name": "http://www.nhn.no"
+    }
+  ],
+  "subjectType": [
+    "Patient"
+  ],
+  "extension": [
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sidebar",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-sidebar",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-information-message",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-information-message",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefintion/sdf-itemControl-visibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-help",
+            "display": "Hide help texts"
+          },
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-sublabel",
+            "display": "Hide sublabel texts"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "2372da89-7c56-4d64-c191-e7c337dcab83",
+  "item": [
+    {
+      "linkId": "54f8fcef-99fe-4ec0-c30f-c0f85b84f4f6",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1f8c6dba-66ba-4888-e315-410c08d314d3",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "f126e5a0-7e86-459b-c125-7a82fa183a7b",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "d1d36136-ca9d-4df9-81e6-dee2cfb16b0c",
+                  "type": "string",
+                  "required": false,
+                  "text": " Others Specify"
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "74dd41d2-84dd-4cd2-ba08-3e812336e74a",
+                    "code": "extra-small-(micro-cephalic",
+                    "system": "urn:uuid:d1b7581d-d15e-4340-c1ca-6eb95104935e",
+                    "display": "Extra small (micro cephalic"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "eb71bb53-fe0d-49d9-887a-dcb110a73ae7",
+                    "code": "--extra-big-(hydrocephalic",
+                    "system": "urn:uuid:d1b7581d-d15e-4340-c1ca-6eb95104935e",
+                    "display": "\t Extra big (hydrocephalic"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "1f8c6dba-66ba-4888-e315-410c08d314d3",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f",
+                    "code": "abnormal"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "fa6b200d-912c-4234-9989-7111968fd0d1",
+                "code": "normal",
+                "system": "urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "2bec20ae-70d3-4e1b-83c3-ab120888cfdf",
+                "code": "abnormal",
+                "system": "urn:uuid:9f6235be-bce3-4bf8-bd27-1e96380a156f",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "text": "Head size:",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8399ed82-b48a-47b6-d32e-969224cc0c5a",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Head size:"
+    },
+    {
+      "linkId": "b9a90470-7e9f-43b0-865d-1e8aba48d70a",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "d2dae682-5a21-4bee-88fa-12ce84f1759a",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "5456b5d1-0632-4c98-82e1-92a376672e38",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "97150877-5ff9-432f-8a29-7acd3698e165",
+                  "type": "string",
+                  "required": false,
+                  "text": "Others Specify"
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "278390df-cf5e-48f9-84b5-c696df4f9301",
+                    "code": "cleft-lip",
+                    "system": "urn:uuid:e25d1d99-e004-4680-82b7-c66d13983331",
+                    "display": "Cleft lip"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "b9ced9f6-e9ec-41f3-a292-8878348b9f58",
+                    "code": "palate",
+                    "system": "urn:uuid:e25d1d99-e004-4680-82b7-c66d13983331",
+                    "display": "Palate"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "d2dae682-5a21-4bee-88fa-12ce84f1759a",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:ed78343b-e14e-4025-812d-117e5732d555",
+                    "code": "abnormal-"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ac40976e-4e31-4940-e1fc-7e85ff0fe781",
+                "code": "normal",
+                "system": "urn:uuid:ed78343b-e14e-4025-812d-117e5732d555",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "bba8adf0-0254-420d-82fc-7e52217f3c8a",
+                "code": "abnormal-",
+                "system": "urn:uuid:ed78343b-e14e-4025-812d-117e5732d555",
+                "display": "Abnormal "
+              }
+            }
+          ],
+          "text": "Mouth and\nGums",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "c5c370c3-a4fe-4537-8420-b58c73cf9f0f",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Mouth and\nGums"
+    },
+    {
+      "linkId": "14f500dd-8958-4102-8fbf-675a7e571d49",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "c98dc5ea-4a9a-4aba-8ae8-27e6f8cc3700",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "eb8c0517-9bc3-427d-9ae3-588e7ad77d1e",
+              "type": "string",
+              "required": false,
+              "text": "Specify",
+              "enableWhen": [
+                {
+                  "question": "c98dc5ea-4a9a-4aba-8ae8-27e6f8cc3700",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "addc10f0-1218-492f-8a29-6d09b2a6c6a1",
+                "code": "normal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "2b18c168-6f27-455e-88c9-017b86c4bcb6",
+                "code": "abnormal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "6ba60598-b2a2-4548-83a9-a134f8f77a49",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Ears"
+    },
+    {
+      "linkId": "706d0f1b-8b36-4055-969e-acaea257af1f",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "0c90fda9-76c6-4cc9-88c0-d41fd73f5a2c",
+              "type": "choice",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "3b9a644e-ccba-4fae-8bc9-5086b7940c71",
+                    "code": "normal-arms-",
+                    "system": "urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6",
+                    "display": "Normal Arms "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "a425f9ba-03c2-43a7-81e1-9d3222864422",
+                    "code": "normal-legs",
+                    "system": "urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6",
+                    "display": "Normal Legs"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e07b50c4-dc8f-47c5-8aee-64db4758c3e8",
+                    "code": "normal-back",
+                    "system": "urn:uuid:cdc165df-0396-40ea-a323-11cb9caabef6",
+                    "display": "Normal Back"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990",
+                    "code": "normal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "a241eb17-8a16-490e-82ac-48cf55102f24",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "344d4162-3f63-49ae-8fdc-281c35798670",
+                  "type": "string",
+                  "text": "\t Others Specify:",
+                  "required": false
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "2fa909dc-799e-450f-cf0a-97b637c17893",
+                    "code": "club-foot:",
+                    "system": "urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d",
+                    "display": "Club foot:"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "ae875e16-1bb6-465b-8b32-1dadccef674b",
+                    "code": "congenital-hip-dislocation:",
+                    "system": "urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d",
+                    "display": "Congenital hip dislocation:"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "48b85623-70e0-4a98-811e-7c9424b8501d",
+                    "code": "jointed-fingers-or-toes:",
+                    "system": "urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d",
+                    "display": "Jointed fingers or toes:"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "9a2b9c51-0e18-403d-8cfd-08e20c4ac559",
+                    "code": "extra-fingers-and-toes:-",
+                    "system": "urn:uuid:160abb87-ba02-4d63-88c6-6161bd3ca02d",
+                    "display": "Extra fingers and toes: "
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "fabcbb9c-4a8d-40ae-c37d-a6a25f99aae4",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "058af85d-cd32-4220-8178-64b772d161b1",
+                "code": "normal",
+                "system": "urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "9e9240ad-8b38-4594-d06b-4a6dd0e33a9f",
+                "code": "abnormal",
+                "system": "urn:uuid:0abe2d71-5cd1-4874-ea45-bbbdbd182990",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5573951e-6b8b-42ae-8e99-bcb7af1768d7",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "d180644d-e0c6-4816-f061-684c6738b68c",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "e2de904f-712d-4ee3-8092-8b9eeeaed285",
+                  "type": "choice",
+                  "item": [
+                    {
+                      "linkId": "20619df2-6c8c-47c6-8e33-559cfb0803c8",
+                      "type": "string",
+                      "required": false,
+                      "text": "Other specify: "
+                    }
+                  ],
+                  "required": false,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "id": "9768a472-20bf-4a4d-c5ae-7a7214e6b54d",
+                        "code": "floppiness",
+                        "system": "urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462",
+                        "display": "Floppiness"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "id": "bab3584d-6302-46ae-9556-4ce80b56c0c0",
+                        "code": "rigidity",
+                        "system": "urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462",
+                        "display": "Rigidity"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "id": "769a002c-de38-43b3-9055-5e20ecab2072",
+                        "system": "urn:uuid:211ab144-e078-4121-e2ac-46a4f1e10462"
+                      }
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "d180644d-e0c6-4816-f061-684c6738b68c",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                        "code": "abnormal"
+                      }
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                            "code": "radio-button"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                    "code": "normal",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Normal"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                    "code": "abnormal",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Abnormal"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "text": "Muscle Tone"
+        },
+        {
+          "linkId": "a9c64ac3-2c95-4272-d12b-cd99f89ba25e",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "006cc30e-2fbe-47cb-b05c-486ca2ceb169",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "e619b5a8-ef2d-4de7-8f86-582a8370236b",
+                  "type": "boolean",
+                  "item": [
+                    {
+                      "linkId": "e314e9ce-38aa-4065-8a1a-0593571bcbe3",
+                      "type": "string",
+                      "required": false,
+                      "text": "Other specify:",
+                      "enableWhen": [
+                        {
+                          "question": "006cc30e-2fbe-47cb-b05c-486ca2ceb169",
+                          "operator": "=",
+                          "answerCoding": {
+                            "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                            "code": "abnormal"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "required": false,
+                  "text": "Not Flexible",
+                  "enableWhen": [
+                    {
+                      "question": "006cc30e-2fbe-47cb-b05c-486ca2ceb169",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                        "code": "abnormal"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                    "code": "flexible",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Flexible"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                    "code": "abnormal",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Abnormal"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "text": "Joints movement"
+        },
+        {
+          "linkId": "709b522d-18a3-4e9a-9c9c-55ff6f6f5ee0",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "583593b9-7dbb-43d8-890a-4eab3e06f33b",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "375b55ee-6159-4790-8279-4993753a0879",
+                  "type": "string",
+                  "text": "Specify",
+                  "required": false,
+                  "enableWhen": [
+                    {
+                      "question": "583593b9-7dbb-43d8-890a-4eab3e06f33b",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                        "code": "abnormal"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                    "code": "normal-5-fingers-and-5-toe",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Normal 5 fingers and 5 toe"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                    "code": "abnormal",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Abnormal"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "text": "Fingers & Toes"
+        },
+        {
+          "linkId": "82907958-633a-4952-c4cb-d7865880c8de",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "845597be-dfdd-4550-b997-636a723f69a4",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "51fbad99-0834-4f4e-a47f-630178a8b099",
+                  "type": "string",
+                  "text": "Specify",
+                  "required": false,
+                  "enableWhen": [
+                    {
+                      "question": "845597be-dfdd-4550-b997-636a723f69a4",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                        "code": "abnormal"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                    "code": "normal-",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Normal "
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                    "code": "abnormal",
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "display": "Abnormal"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "text": "Arms &\nShoulders"
+        },
+        {
+          "linkId": "6c1ea238-296e-4759-83dc-1c6fb2aa8fa2",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Arms and legs"
+    },
+    {
+      "linkId": "0360a6ab-d29c-46a4-95ae-4cc2e6c3e420",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "f4af620f-17fb-43d2-f62b-2249d08ae74b",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "bc982a32-a23b-43ab-9636-9ed9bf2e0a76",
+              "type": "choice",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "2427f4d4-6b08-47f0-80cc-05edf8fa85a6",
+                    "code": "any-swellings",
+                    "system": "urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8",
+                    "display": "Any Swellings"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e7f01220-6eaf-4a3d-8738-40039005c145",
+                    "code": "protrusions",
+                    "system": "urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8",
+                    "display": "Protrusions"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "18680caf-a00c-4a26-9521-89150cb3d6d6",
+                    "code": "sores-or-marks-along-the-spine",
+                    "system": "urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8",
+                    "display": "Sores or Marks along the spine"
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "f4af620f-17fb-43d2-f62b-2249d08ae74b",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5ad03834-2b66-4ccf-ef7e-f0c2e87585cc",
+              "type": "string",
+              "required": false,
+              "text": "Specify",
+              "enableWhen": [
+                {
+                  "question": "f4af620f-17fb-43d2-f62b-2249d08ae74b",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "addc10f0-1218-492f-8a29-6d09b2a6c6a1",
+                "code": "normal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "2b18c168-6f27-455e-88c9-017b86c4bcb6",
+                "code": "abnormal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8447abbf-d7c4-4bdd-8866-16d89899f2a8",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Spine/neck/\nback"
+    },
+    {
+      "linkId": "50963523-9bc0-439a-fb9a-1779f26e3daa",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "e94703b3-57d6-446c-8aef-e709628c1cc8",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "6d8d9ddf-ca25-4629-de57-09a930352dae",
+              "type": "choice",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "2427f4d4-6b08-47f0-80cc-05edf8fa85a6",
+                    "code": "baby-becomes-floppy-when-lying-in-certain-position",
+                    "system": "urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8",
+                    "display": "Baby becomes floppy when lying in certain position"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e7f01220-6eaf-4a3d-8738-40039005c145",
+                    "code": "--celebral-palsy?-",
+                    "system": "urn:uuid:4cd0e19b-e440-4b46-da22-74c588937dc8",
+                    "display": "\t Celebral palsy? "
+                  }
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "check-box"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "e94703b3-57d6-446c-8aef-e709628c1cc8",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "a064c365-712c-4a39-b8eb-747760422560",
+              "type": "string",
+              "required": false,
+              "text": "If yes Specify",
+              "enableWhen": [
+                {
+                  "question": "e94703b3-57d6-446c-8aef-e709628c1cc8",
+                  "operator": "exists",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "addc10f0-1218-492f-8a29-6d09b2a6c6a1",
+                "code": "normal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "2b18c168-6f27-455e-88c9-017b86c4bcb6",
+                "code": "abnormal",
+                "system": "urn:uuid:46cd4e69-9d0d-456e-8a94-af3256f82039",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "c78961df-b2fa-435f-87b4-4024035b61bf",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Body Movement"
+    },
+    {
+      "linkId": "109892e4-3d7a-4f7b-d7c1-5d4473f779fc",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "f1f83f64-54e7-454d-88a3-68f4c5d9278c",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "7b32c23b-c2e4-427a-a295-cd8136bb428b",
+              "type": "string",
+              "required": false,
+              "text": "Specify",
+              "enableWhen": [
+                {
+                  "question": "f1f83f64-54e7-454d-88a3-68f4c5d9278c",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                "code": "normal-",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Normal "
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                "code": "abnormal",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "a40ddbf0-0eda-4ded-84d5-98676fffd3cf",
+          "type": "string",
+          "required": false,
+          "text": "Remarks"
+        }
+      ],
+      "required": false,
+      "text": "Abdominal wall "
+    },
+    {
+      "linkId": "3bb99c47-42e3-4d81-fd3f-04c5c7a8e248",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "cde92f6e-84ba-408d-82cd-271c6f73c51f",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                "code": "normal",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                "code": "abnormal",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "138068a7-db0b-480c-8040-05316871fbd0",
+          "type": "string",
+          "text": "Remarks",
+          "required": false
+        }
+      ],
+      "required": false,
+      "text": "Genitalia"
+    },
+    {
+      "linkId": "ae58c67e-6fdd-4dfa-8ab8-b8f4adb1b5d4",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "34ec3ae2-17f6-4ab9-9690-1afd15fc9b87",
+          "type": "choice",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "ad2178b9-6b63-459b-fd0b-ef000c3061de",
+                "code": "perforate-(normal)",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Perforate (Normal)"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "1c2737cf-b47c-4796-d52a-131ac97f549f",
+                "code": "imperforate-(abnormal)",
+                "system": "urn:uuid:cd661375-0c91-4ee4-ca25-1a99241e8375",
+                "display": "Imperforate (Abnormal)"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "f92a95ee-b015-4850-8f0c-7ca500580d60",
+          "type": "string",
+          "text": "Remarks",
+          "required": false
+        }
+      ],
+      "required": false,
+      "text": "Anus"
+    },
+    {
+      "linkId": "73a00b14-2181-4d7b-8f83-586c2f8fd0f2",
+      "type": "string",
+      "required": false,
+      "text": "List any abnormal findings (not captured previously):"
+    },
+    {
+      "linkId": "e5004328-27a1-4109-f273-524c97d3c295",
+      "type": "display",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "highlight"
+              }
+            ]
+          }
+        }
+      ],
+      "required": false,
+      "text": "NB: Assessment to be done within 48 hours after childbirth. To be repeated at 6 weeks"
+    }
+  ]
+}

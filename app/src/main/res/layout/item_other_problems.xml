@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvSleepingProblemslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:text="Does your baby have sleeping problems"/>
+
+    <TextView
+        android:id="@+id/tvSleepingProblems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSleepingProblemslabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sleeping Problems : "-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvSleepingProblems"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sleeping Problems"-->
+<!--            android:textSize="16sp" />-->
+
+
+
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tvIrritabilitylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:text="Irritability"/>
+
+    <TextView
+        android:id="@+id/tvIrritability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--    >-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvIrritabilitylabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Irritability : "-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"/>-->
+
+
+<!--         <TextView-->
+<!--            android:id="@+id/tvIrritability"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Irritability"-->
+<!--            android:textSize="14sp" />-->
+
+<!--    </LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/tvOthersSpecifylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:text="Others (Specify)"/>
+
+    <TextView
+        android:id="@+id/tvOthersSpecify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvOthersSpecifylabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Others (Specify) : "-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvOthersSpecify"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Others Specify"-->
+<!--            android:textSize="14sp" />-->
+
+
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>
+
+
+
+
+
+<!--</LinearLayout>-->

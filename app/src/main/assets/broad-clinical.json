@@ -1,0 +1,429 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "nb-NO",
+  "status": "draft",
+  "publisher": "NHN",
+  "meta": {
+    "profile": [
+      "http://ehelse.no/fhir/StructureDefinition/sdf-Questionnaire"
+    ],
+    "tag": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "nb-NO",
+        "display": "Bokmål"
+      }
+    ],
+    "security": [
+      {
+        "code": "3",
+        "display": "Helsehjelp (Full)",
+        "system": "urn:oid:2.16.578.1.12.4.1.1.7618"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "name": "http://www.nhn.no"
+    }
+  ],
+  "subjectType": [
+    "Patient"
+  ],
+  "extension": [
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sidebar",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-sidebar",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefinition/sdf-information-message",
+      "valueCoding": {
+        "system": "http://helsenorge.no/fhir/ValueSet/sdf-information-message",
+        "code": "1"
+      }
+    },
+    {
+      "url": "http://helsenorge.no/fhir/StructureDefintion/sdf-itemControl-visibility",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-help",
+            "display": "Hide help texts"
+          },
+          {
+            "system": "http://helsenorge.no/fhir/CodeSystem/AttachmentRenderOptions",
+            "code": "hide-sublabel",
+            "display": "Hide sublabel texts"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "d857dcc0-a2f5-46fe-ff14-b379c6ef5cd1",
+  "item": [
+    {
+      "linkId": "9c0f682e-e110-4ea9-8d9f-3265db02b990",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "6bd4142d-16a0-4451-8e7c-53ea7391d3f7",
+          "type": "string",
+          "text": "Age at first contact",
+          "required": false
+        },
+        {
+          "linkId": "58fac309-fed2-4652-86cc-3f81f56b35fa",
+          "type": "string",
+          "text": "Weight (gms)",
+          "required": false
+        },
+        {
+          "linkId": "5efb7f2d-f48a-45a4-846e-18126cee96dd",
+          "type": "string",
+          "text": "Length/ height (cm)",
+          "required": false
+        },
+        {
+          "linkId": "9d7b089f-37c8-4b47-89b3-8c717d7472c1",
+          "type": "string",
+          "text": "Z score",
+          "required": false
+        },
+        {
+          "linkId": "cfb5d6da-dcfd-49c3-81bd-f56e68964d08",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "d66d6439-dfc1-4249-8928-249b3b440fda",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "81ba4232-178a-4538-8e01-fb0bdc9a6da5",
+                  "type": "date",
+                  "text": "Date",
+                  "required": false,
+                  "enableWhen": [
+                    {
+                      "question": "d66d6439-dfc1-4249-8928-249b3b440fda",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                        "code": "yes"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "3e3f13c7-423f-4dee-b05f-cb5c36cbb4c9",
+                    "code": "yes",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e6be61a4-a821-4a4f-81dd-2a46eff83961",
+                    "code": "no",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "No"
+                  }
+                }
+              ],
+              "text": "Exposed:",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "d3e710f1-6ef6-41c3-b1c2-49597340e362",
+              "type": "choice",
+              "item": [
+                {
+                  "linkId": "20e13539-053d-481e-871d-9fd1897980d0",
+                  "type": "date",
+                  "text": "Date:",
+                  "required": false,
+                  "enableWhen": [
+                    {
+                      "question": "d3e710f1-6ef6-41c3-b1c2-49597340e362",
+                      "operator": "=",
+                      "answerCoding": {
+                        "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                        "code": "yes"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "3e3f13c7-423f-4dee-b05f-cb5c36cbb4c9",
+                    "code": "yes",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e6be61a4-a821-4a4f-81dd-2a46eff83961",
+                    "code": "no",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "No"
+                  }
+                }
+              ],
+              "text": "Reactive:",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "ce47c7ad-f521-48c3-81cf-015d4ef33f2d",
+              "type": "choice",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "id": "3e3f13c7-423f-4dee-b05f-cb5c36cbb4c9",
+                    "code": "yes",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "id": "e6be61a4-a821-4a4f-81dd-2a46eff83961",
+                    "code": "no",
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "display": "No"
+                  }
+                }
+              ],
+              "text": "Non reactive:",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                        "code": "radio-button"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "d3e710f1-6ef6-41c3-b1c2-49597340e362",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:f0fa11fe-0715-4dd4-b969-18ef4cbf7036",
+                    "code": "no"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "text": "HIV status:"
+        },
+        {
+          "linkId": "ed426035-1a8b-42a4-820e-ed25329721fd",
+          "type": "string",
+          "text": "Haemoglobin",
+          "required": false
+        },
+        {
+          "linkId": "fc9e857f-934b-46f2-8146-1caebd57d8c3",
+          "type": "display",
+          "required": false,
+          "text": "Physical features:"
+        },
+        {
+          "linkId": "d51e6afc-182a-4584-8677-f23165e1c2d7",
+          "type": "string",
+          "text": "Colouration (cyanosis/jaundice/macules/hypopigmentation):",
+          "required": false
+        },
+        {
+          "linkId": "85316d2a-e829-4f4a-aa99-f284f76edc6b",
+          "type": "string",
+          "text": "Head circumference (cm):",
+          "required": false
+        },
+        {
+          "linkId": "bb95c46a-eba3-4989-8ca7-ff20b1fc820d",
+          "type": "string",
+          "text": "Ears:",
+          "required": false
+        },
+        {
+          "linkId": "e9c645d7-0d04-4afc-8d2f-cb6b44fc7643",
+          "type": "string",
+          "text": "Chest:",
+          "required": false
+        },
+        {
+          "linkId": "b83f9006-f2ce-490e-88d8-6d77b227791b",
+          "type": "string",
+          "text": "Abdomen:",
+          "required": false
+        },
+        {
+          "linkId": "27447246-d3b2-4760-8205-45ba476dee9a",
+          "type": "string",
+          "text": "Spine:",
+          "required": false
+        },
+        {
+          "linkId": "9f17f327-321c-496a-80ff-ca3c8c13b626",
+          "type": "string",
+          "text": "Eyes (refer to section I):",
+          "required": false
+        },
+        {
+          "linkId": "dfd21bc4-5af6-41d2-ab76-c92007e62d08",
+          "type": "string",
+          "text": "Mouth:",
+          "required": false
+        },
+        {
+          "linkId": "14d1558d-77bf-44ee-853d-86b6f2c9012a",
+          "type": "string",
+          "text": "Heart:",
+          "required": false
+        },
+        {
+          "linkId": "4555e63b-070c-4797-8899-0fecc3f006da",
+          "type": "string",
+          "text": "Umbilical cord/umbilicus:",
+          "required": false
+        },
+        {
+          "linkId": "344c4b3b-96ea-426a-8e23-5f9184db249f",
+          "type": "string",
+          "text": "Arms & hands:",
+          "required": false
+        },
+        {
+          "linkId": "c0ab6438-142f-42f5-8fbe-9f4dea5efcd3",
+          "type": "string",
+          "text": "Legs & feet:",
+          "required": false
+        },
+        {
+          "linkId": "88294c20-7c51-45ff-885d-bcbe02eee393",
+          "type": "choice",
+          "item": [
+            {
+              "linkId": "82a22330-f73c-4a6a-8da5-5cd2c984fad4",
+              "type": "string",
+              "text": "(Specify: Indeterminate, undescended testes/ hypospadiasis etc)",
+              "required": false,
+              "enableWhen": [
+                {
+                  "question": "88294c20-7c51-45ff-885d-bcbe02eee393",
+                  "operator": "=",
+                  "answerCoding": {
+                    "system": "urn:uuid:7a511ccd-c315-4682-b7ba-75dd4aa85218",
+                    "code": "abnormal"
+                  }
+                }
+              ]
+            }
+          ],
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "b6040216-aa0d-4533-c5db-75a4263dfafe",
+                "code": "normal",
+                "system": "urn:uuid:7a511ccd-c315-4682-b7ba-75dd4aa85218",
+                "display": "Normal"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "e8fea3ae-6eb2-4500-889e-a873e0f79900",
+                "code": "abnormal",
+                "system": "urn:uuid:7a511ccd-c315-4682-b7ba-75dd4aa85218",
+                "display": "Abnormal"
+              }
+            }
+          ],
+          "text": "Genitalia"
+        },
+        {
+          "linkId": "7684f750-c812-4aed-8cf3-132abc296399",
+          "type": "choice",
+          "text": "Anus:",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "id": "5d890f36-7c20-4656-9586-b9ad0211e76f",
+                "code": "perforate-(normal)",
+                "system": "urn:uuid:189c8bb0-67a1-42cb-c4ae-7079e6d5372f",
+                "display": "Perforate (Normal)"
+              }
+            },
+            {
+              "valueCoding": {
+                "id": "6550606e-cdcf-47f7-9024-8de50ee09b60",
+                "code": "imperforate-(abnormal)",
+                "system": "urn:uuid:189c8bb0-67a1-42cb-c4ae-7079e6d5372f",
+                "display": "Imperforate (Abnormal)"
+              }
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                    "code": "radio-button"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "text": "Broad clinical review at first contact below 6 months:"
+    }
+  ]
+}

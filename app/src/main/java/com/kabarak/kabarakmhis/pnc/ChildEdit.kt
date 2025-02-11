@@ -32,7 +32,7 @@ class ChildEdit : AppCompatActivity() {
         retrofitCallsFhir = RetrofitCallsFhir()
 
         // Load the questionnaire JSON
-        questionnaireJsonString = getStringFromAssets("new-patient-registration.json")
+        questionnaireJsonString = getStringFromAssets("other-problems.json")
 
         // Assign questionnaireResponseId to responseId
         responseId = intent.getStringExtra("responseId") ?: ""

@@ -127,6 +127,7 @@ class FragmentConfirmPatient : Fragment(){
                     val observationList = kabarakViewModel.getAllObservations(requireContext())
                     observationList.forEach {
 
+
                         val title = it.title
                         val codeLabel = it.codeLabel
                         val value = it.value
@@ -288,21 +289,14 @@ class FragmentConfirmPatient : Fragment(){
             .putString(FragmentConfirmDetails.QUESTIONNAIRE_FILE_PATH_KEY, "patient.json")
     }
 
-    private fun addQuestionnaireFragment() {
+    private fun addQuestionnaireFragment(){
         val fragment = QuestionnaireFragment()
-
-        // Use your own key to pass the JSON string
-        val args = Bundle().apply {
-            putString("questionnaire_json_string", viewModel.questionnaire)
-        }
-
-        fragment.arguments = args
-
+        fragment.arguments =
+            bundleOf(QuestionnaireFragment.SUBMIT_REQUEST_KEY to viewModel.questionnaire)
         childFragmentManager.commit {
             add(R.id.add_patient_container, fragment, QUESTIONNAIRE_FRAGMENT_TAG)
         }
     }
-
 
 
     private fun getConfirmDetails() {
