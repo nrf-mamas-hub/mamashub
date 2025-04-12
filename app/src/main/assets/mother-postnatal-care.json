@@ -1,0 +1,237 @@
+{
+  "title": "Screener",
+  "status": "active",
+  "version": "0.0.1",
+  "publisher": "Kenneth",
+  "resourceType": "Questionnaire",
+  "subjectType": [
+    "Encounter"
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext",
+      "valueExpression": {
+        "language": "application/x-fhir-query",
+        "expression": "Encounter",
+        "name": "encounter"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "0a964282-5a8b-4f2c-8924-d78776b4e9d7",
+      "type": "display",
+      "text": "POSTNATAL CARE Mother",
+      "required": false,
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+            "valueMarkdown": "### **POSTNATAL CARE**\n\n### **Mother**"
+          }
+        ]
+      }
+    },
+    {
+      "linkId": "5032e389-a28a-43c2-dc6c-c0072798925e",
+      "type": "dateTime",
+      "text": "Date/Visit:",
+      "required": true
+    },
+    {
+      "linkId": "83a01427-9e23-4792-89e5-f6838f3de62a",
+      "type": "string",
+      "text": "Blood pressure:",
+      "required": true
+    },
+    {
+      "linkId": "ba20967e-6cf0-4dc2-8e5b-4696f41d394a",
+      "type": "string",
+      "text": "Temp:",
+      "required": true
+    },
+    {
+      "linkId": "f9b2618a-ae2e-4d11-b651-0b54831c892b",
+      "type": "string",
+      "text": "Pulse:",
+      "required": true
+    },
+    {
+      "linkId": "3662d4da-2403-4291-869b-c052ec2cda64",
+      "type": "string",
+      "text": "Respiratory Rate:",
+      "required": true
+    },
+    {
+      "linkId": "c0d5830a-3f29-427b-8702-d20695fecceb",
+      "type": "string",
+      "text": "General Condition:",
+      "required": false
+    },
+    {
+      "linkId": "9b8de28d-f72f-478b-89ed-fc40863d4684",
+      "type": "string",
+      "text": "Breast:",
+      "required": true
+    },
+    {
+      "linkId": "f1c03f4c-f22e-4f70-883d-412b7439ab55",
+      "type": "string",
+      "text": "C/S scar:"
+    },
+    {
+      "linkId": "891f0e56-1a6d-497b-8102-78bd0a08cb19",
+      "type": "string",
+      "text": "Involution of uterus:"
+    },
+    {
+      "linkId": "2204dd2c-c581-4844-83d0-45491f2e0008",
+      "type": "string",
+      "text": "Pelvic Exam:",
+      "required": false
+    },
+    {
+      "linkId": "56a9546f-80ca-4c6a-823e-4a36003e0352",
+      "type": "string",
+      "text": "Condition of episiotomy:",
+      "required": false
+    },
+    {
+      "linkId": "29f0ddb9-4075-476f-f3e4-1acf45c976ae",
+      "type": "string",
+      "text": "Lochia (smell amount and color):",
+      "required": false
+    },
+    {
+      "linkId": "9b793adb-b66b-4a09-897b-afd0f252d934",
+      "type": "string",
+      "text": "Haemoglobin (HB):",
+      "required": false
+    },
+    {
+      "linkId": "9990e89b-555b-4503-8a77-544250a56e9d",
+      "type": "choice",
+      "text": "Mothers HIV status:",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "cbd7fb4d-cc7c-49ca-9c3d-9b254c6f2d88",
+            "code": "tested",
+            "system": "urn:uuid:c77da557-88bb-45cd-9075-4514ec186e12",
+            "display": "Tested"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "873716f6-fc14-410b-895d-b58877e84f35",
+            "code": "not-tested",
+            "system": "urn:uuid:c77da557-88bb-45cd-9075-4514ec186e12",
+            "display": "Not tested"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "55684471-3425-4ae4-ddf1-52e642e70692",
+            "code": "reactive",
+            "system": "urn:uuid:c77da557-88bb-45cd-9075-4514ec186e12",
+            "display": "Reactive"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "drop-down"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "c2203e84-5b77-445b-9295-e794a69a33f1",
+      "type": "choice",
+      "text": "Mother on HAART: ",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "ab15d5e5-8441-41ab-8241-e1ca6f31e2e9",
+            "code": "yes",
+            "system": "urn:uuid:4d6fc275-1d81-445c-bc4f-e8d63bcefb10",
+            "display": "YES"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "ceb24a11-d388-4054-a885-b04f9070f016",
+            "code": "no",
+            "system": "urn:uuid:4d6fc275-1d81-445c-bc4f-e8d63bcefb10",
+            "display": "NO"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "radio-button"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "73b1b495-0b56-4ecf-d86a-f502545160ac",
+      "type": "choice",
+      "text": "Counselling on family planning: ",
+      "required": false,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "id": "28474b7c-b0db-4cc6-889b-9dd5363c43f0",
+            "code": "yes",
+            "system": "urn:uuid:41a1cbcf-7913-4159-8c62-7937cf2d082a",
+            "display": "YES"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "d6a2a8cc-44fc-4bbf-b5bf-0a7cd77e187e",
+            "code": "no",
+            "system": "urn:uuid:41a1cbcf-7913-4159-8c62-7937cf2d082a",
+            "display": "NO"
+          }
+        },
+        {
+          "valueCoding": {
+            "id": "9bd4233f-41e8-4d26-9b25-ac5351365b7c",
+            "code": "n/a",
+            "system": "urn:uuid:41a1cbcf-7913-4159-8c62-7937cf2d082a",
+            "display": "N/A"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "399e9f1d-1ef7-4ca4-e78d-c1b7446f572f",
+      "type": "string",
+      "text": "FP method, specify:",
+      "required": false
+    },
+    {
+      "linkId": "0fe8f7c2-e2a0-4a36-b075-0349b7b348ec",
+      "type": "string",
+      "text": "Screen for maternal mental health:"
+    }
+  ]
+}
