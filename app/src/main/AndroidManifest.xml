@@ -19,6 +19,12 @@
         android:windowSoftInputMode="adjustPan"
         tools:replace="android:allowBackup">
         <activity
+            android:name=".pnc.microNutrients.microNutrientsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.microNutrients.microNutrientsEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".pnc.reasonsForSpecialCare.ReasonsEditActivity"
             android:exported="false" />
         <activity
