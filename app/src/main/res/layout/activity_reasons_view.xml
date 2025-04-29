@@ -253,7 +253,7 @@
         android:id="@+id/recycler_view_reasons"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_bcg_vaccination" />
+        tools:listitem="@layout/reasons_item" />
 
   </LinearLayout>
 
