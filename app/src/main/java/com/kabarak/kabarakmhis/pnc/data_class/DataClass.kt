@@ -147,3 +147,7 @@ data class BabyTeethRecordDataClass(
     val ageWhenSeen: String,
     val teethType: String?
 )
+
+data class ReasonsForSpecialCare(
+    val id: String,
+    val reasons: List<String>)

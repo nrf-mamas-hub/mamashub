@@ -40,7 +40,7 @@ import com.kabarak.kabarakmhis.pnc.childpostnatalcare.ChildPncViewActivity
 import com.kabarak.kabarakmhis.immunisation.vitamin_a_supplimentary.VitaminAsupplimentaryView
 import com.kabarak.kabarakmhis.pnc.Other_Vaccines.VaccinesViewActivity
 import com.kabarak.kabarakmhis.pnc.babyTeethRecord.BabyTeethViewRecord
-
+import com.kabarak.kabarakmhis.pnc.reasonsForSpecialCare.ReasonsViewActivity
 
 
 class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternalProfileChild>,
@@ -109,7 +109,7 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 8.7 -> { context.startActivity(Intent(context, ChildCivilRegistrationView::class.java))}
 
                 // Reasons for Special Care
-                8.8 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.8 -> { context.startActivity(Intent(context, ReasonsViewActivity::class.java))}
 
                 // Other Problems as Reported by Parent or Guardian
                 8.9 -> { context.startActivity(Intent(context, ReferralView::class.java))}
