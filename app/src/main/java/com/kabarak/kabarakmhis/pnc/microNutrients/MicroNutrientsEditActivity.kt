@@ -22,7 +22,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class microNutrientsEditActivity : AppCompatActivity() {
+class MicroNutrientsEditActivity : AppCompatActivity() {
     private lateinit var retrofitCallsFhir: RetrofitCallsFhir
     private var questionnaireJsonString: String? = null
     private lateinit var responseId: String
@@ -90,14 +90,14 @@ class microNutrientsEditActivity : AppCompatActivity() {
                                 populateQuestionnaireFragment(questionnaireResponse)
                             } catch (e: Exception) {
                                 Log.e("ResponseEditActivity", "Error parsing questionnaire response", e)
-                                Toast.makeText(this@microNutrientsEditActivity, "Error populating questionnaire", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@MicroNutrientsEditActivity, "Error populating questionnaire", Toast.LENGTH_SHORT).show()
                             }
                         } ?: run {
-                            Toast.makeText(this@microNutrientsEditActivity, "Failed to retrieve the response data.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MicroNutrientsEditActivity, "Failed to retrieve the response data.", Toast.LENGTH_SHORT).show()
                         }
                     } else {
                         Log.e("ResponseEditActivity", "Failed to fetch response. Response code: ${response.code()}")
-                        Toast.makeText(this@microNutrientsEditActivity, "Failed to fetch the questionnaire response: ${response.message()}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MicroNutrientsEditActivity, "Failed to fetch the questionnaire response: ${response.message()}", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -105,7 +105,7 @@ class microNutrientsEditActivity : AppCompatActivity() {
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                 CoroutineScope(Dispatchers.Main).launch {
                     Log.e("ResponseEditActivity", "Error occurred while fetching questionnaire response", t)
-                    Toast.makeText(this@microNutrientsEditActivity, "Error occurred while fetching: ${t.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MicroNutrientsEditActivity, "Error occurred while fetching: ${t.message}", Toast.LENGTH_SHORT).show()
                 }
             }
         })
@@ -154,19 +154,19 @@ class microNutrientsEditActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
                     CoroutineScope(Dispatchers.Main).launch {
                         if (response.isSuccessful) {
-                            Toast.makeText(this@microNutrientsEditActivity, "Successfully updated!", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MicroNutrientsEditActivity, "Successfully updated!", Toast.LENGTH_SHORT).show()
                             Log.d("ResponseEditActivity", "Successfully updated the questionnaire response.")
                         } else {
                             val errorBody = response.errorBody()?.string() ?: "No error body"
                             Log.e("ResponseEditActivity", "Failed to update. Response code: ${response.code()}, Body: $errorBody")
-                            Toast.makeText(this@microNutrientsEditActivity, "Update failed: ${response.message()}", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@MicroNutrientsEditActivity, "Update failed: ${response.message()}", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
 
                 override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                     CoroutineScope(Dispatchers.Main).launch {
-                        Toast.makeText(this@microNutrientsEditActivity, "Error occurred while updating: ${t.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MicroNutrientsEditActivity, "Error occurred while updating: ${t.message}", Toast.LENGTH_SHORT).show()
                         Log.e("ResponseEditActivity", "Error occurred while updating questionnaire response", t)
                     }
                 }
