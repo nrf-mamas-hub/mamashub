@@ -31,16 +31,15 @@ import com.kabarak.kabarakmhis.new_designs.present_pregnancy.PresentPregnancyLis
 import com.kabarak.kabarakmhis.new_designs.previous_pregnancy.PreviousPregnancyList
 import com.kabarak.kabarakmhis.new_designs.tetanus_diptheria.PreventiveServiceList
 import com.kabarak.kabarakmhis.new_designs.weight_monitoring.WeightMonitoringChart
-import com.kabarak.kabarakmhis.pnc.ChildBirthView
 import com.kabarak.kabarakmhis.pnc.ChildViewActivity
 import com.kabarak.kabarakmhis.pnc.child_civil_registration.ChildCivilRegistrationView
 import com.kabarak.kabarakmhis.pnc.diphtheria.DiphtheriaView
 
-import com.kabarak.kabarakmhis.pnc.childpostnatalcare.ChildPncViewActivity
 import com.kabarak.kabarakmhis.immunisation.vitamin_a_supplimentary.VitaminAsupplimentaryView
 import com.kabarak.kabarakmhis.pnc.Other_Vaccines.VaccinesViewActivity
 import com.kabarak.kabarakmhis.pnc.babyTeethRecord.BabyTeethViewRecord
-
+import com.kabarak.kabarakmhis.pnc.microNutrients.MicroNutrientsViewActivity
+import com.kabarak.kabarakmhis.pnc.reasonsForSpecialCare.ReasonsViewActivity
 
 
 class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternalProfileChild>,
@@ -109,7 +108,7 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 8.7 -> { context.startActivity(Intent(context, ChildCivilRegistrationView::class.java))}
 
                 // Reasons for Special Care
-                8.8 -> { context.startActivity(Intent(context, ReferralView::class.java))}
+                8.8 -> { context.startActivity(Intent(context, ReasonsViewActivity::class.java))}
 
                 // Other Problems as Reported by Parent or Guardian
                 8.9 -> { context.startActivity(Intent(context, ReferralView::class.java))}
@@ -132,8 +131,8 @@ class MaternalProfileChildrenAdapter(private var entryList: ArrayList<DbMaternal
                 // Record of Baby’s Teeth Development (Duplicate for clarity if needed)
                 9.6 -> { context.startActivity(Intent(context, BabyTeethViewRecord::class.java))}
 
-                // Reason for Special Care (Duplicate for additional entry if applicable)
-                9.7 -> { context.startActivity(Intent(context, PMTCTInterventionsView::class.java))}
+                // Micro-nutrient)
+                9.7 -> { context.startActivity(Intent(context, MicroNutrientsViewActivity::class.java))}
 
                 // Immunization
                 10.1 -> { context.startActivity(Intent(context, BcgAddActivity::class.java))} // BCG vaccine

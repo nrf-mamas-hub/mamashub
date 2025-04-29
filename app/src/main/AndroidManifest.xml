@@ -19,6 +19,25 @@
         android:windowSoftInputMode="adjustPan"
         tools:replace="android:allowBackup">
         <activity
+            android:name=".pnc.microNutrients.MicroNutrientsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.microNutrients.MicroNutrientsEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.reasonsForSpecialCare.ReasonsEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.microNutrients.MicroNutrientsAdd"
+            android:exported="false" />
+        <activity
+            android:name=".pnc.reasonsForSpecialCare.ReasonsAddActivity"
+            android:exported="false"
+            android:theme="@style/Theme.KabarakMHIS" />
+        <activity
+            android:name=".pnc.reasonsForSpecialCare.ReasonsViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".pnc.babyTeethRecord.BabyTeethEdit"
             android:exported="false" />
         <activity
@@ -55,7 +74,7 @@
             android:name=".pnc.inactivated_polio_vaccine.InactivatedPolioVaccine"
             android:exported="false" />
         <activity
-                android:name=".pnc.inactivated_polio_vaccine.InactivatedPolioVaccineEdit"
+            android:name=".pnc.inactivated_polio_vaccine.InactivatedPolioVaccineEdit"
             android:exported="false" />
         <activity
             android:name=".pnc.child_civil_registration.ChildCivilRegistrationView"
@@ -74,37 +93,29 @@
             android:exported="false" />
         <activity
             android:name=".pnc.child_civil_registration.CivilRegistrationDetails"
-            android:exported="false"/>
-<!--        <activity-->
-<!--            android:name=".pnc.ChildView"-->
-<!--            android:exported="false" />-->
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".pnc.ChildView" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".pnc.ChildEdit"
             android:exported="false" />
         <activity
             android:name=".pnc.ChildAdd"
-            android:exported="false" />
-
-        <activity
-            android:name=".pnc.ChildBirthView"
-            android:exported="false" />
-
-        <activity
-            android:name=".pnc.ChildAdd"
-            android:exported="true" />
-
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".pnc.ChildViewActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".pnc.ChildAdd" -->
+        <!-- android:exported="true" /> -->
         <activity
             android:name=".pnc.Other_Vaccines.VaccinesViewActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".pnc.Other_Vaccines.VaccinesAdd"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".pnc.Other_Vaccines.VaccinesEdit"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".new_designs.screens.UpcomingAppointments"
             android:exported="false"
